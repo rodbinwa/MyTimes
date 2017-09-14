@@ -1,3 +1,7 @@
+body {
+  background-color: white;
+}
+
 header {
   display: flex;
   font-family: Verdana;
@@ -9,11 +13,13 @@ header {
   width: 100%;
   height: 80px;
   z-index: 1;
+  background-color: white;
 }
 
 nav{
   display: flex;
   padding-right: 40px;
+  flex-wrap: wrap;
 }
 
 nav span {
@@ -37,4 +43,75 @@ nav span a {
 
 .mytlogo img {
   margin-right: 12px;
+}
+
+/*--------------------- Main Content  --------------------*/
+div {
+  border: 1px solid black;
+}
+
+.content {
+  display: flex;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
+  width: 1170px;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding-right: 32px;
+  }
+
+.column.large{
+  width: 630px;
+
+}
+
+.column.medium {
+  width: 300px;
+
+}
+
+.column.small {
+  width: 240px;
+}
+
+.image-content {
+  height: 300px;
+  color: white;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+}
+
+.lead-story .image-content  {
+  background-image: url("../images/img-story-main.png");
+  font-size: 40px;
+  text-align: left;
+}
+
+/*.stories .story{
+  display: flex;
+}
+*/
+.fall-cancelled.image-content {
+  background-image: url("../images/img-story-2.png");
+}
+
+.pop-culture.image-content {
+  background-image: url("../images/img-story-3.png");
+}
+
+.cat-cleo.image-content {
+  background-image: url("../images/img-story-1.png");
+}
+
+.narative {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
